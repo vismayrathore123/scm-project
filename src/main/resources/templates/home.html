@@ -4,20 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        .container{
-            margin:auto;
-            width: 50%;
-            padding:20px;
-            background:#e2e2e2;
-        }
-    </style>
+    <link rel="stylesheet" data-th-href="@{'/css/output.css'}">
+    
 </head>
 <body>
     <!-- we can write data-th-text or th-text to use dynamic data 
     it is lymtheaf attributes -->
-    <div class="container">
-        <h1 data-th-text="${name}"> Kesar House</h1>
+    <div class="bg-gray-700 w-1/2 p-4 mx-auto">
+        <h1 class="text-2 font-bold" data-th-text="${name}"> Kesar House</h1>
         <h2 data-th-text="${Evision_software_solution }"></h2>
         
         <h3 th:text="${github}"></h3>
