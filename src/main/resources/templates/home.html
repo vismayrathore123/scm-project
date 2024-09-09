@@ -4,21 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" data-th-href="@{'/css/output.css'}">
-    
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" data-th-href="@{'/css/tailwind.css'}">
+
+
 </head>
 <body>
-    <!-- we can write data-th-text or th-text to use dynamic data 
-    it is lymtheaf attributes -->
-    <div class="bg-gray-700 w-1/2 p-4 mx-auto">
-        <h1 class="text-2 font-bold" data-th-text="${name}"> Kesar House</h1>
-        <h2 data-th-text="${Evision_software_solution }"></h2>
-        
-        <h3 th:text="${github}"></h3>
-        <a th:href="${githubLink}">click here to open</a>
-        <h1>Welcome to home page 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam pariatur repudiandae molestias ab, consectetur nisi quasi porro quia. Illo veniam rerum consectetur, ab quasi quisquam debitis cum accusantium. Quae, ducimus ratione natus facere placeat dolore voluptatum ad, saepe nihil eum harum fugit voluptatibus cum ea! Nostrum a beatae qui in!</p>
-        </h1>
-    </div>
+<!-- we can write data-th-text or th-text to use dynamic data
+it is lymtheaf attributes -->
+<div class="bg-gray-200 w-1/2 p-4 mx-auto mt-4 justify-center  items-center ">
+    <h1 class="text-2 font-bold" data-th-text="${name}"> Kesar House</h1>
+    <h2 data-th-text="${Evision_software_solution }"></h2>
+
+    <h3 th:text="${github}"></h3>
+    <a th:href="${githubLink}">click here to open</a>
+    <h1>Welcome to my world
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam pariatur repudiandae molestias ab, consectetur nisi quasi porro quia. Illo veniam rerum consectetur, ab quasi quisquam debitis cum accusantium. Quae, ducimus ratione natus facere placeat dolore voluptatum ad, saepe nihil eum harum fugit voluptatibus cum ea! Nostrum a beatae qui in!</p>
+    </h1>
+    <div><button class="px-3 py-3 rounded bg-blue-700 text-white hover:bg-blue-600"> click here  </button></div>
+</div>
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+
 </body>
 </html>
